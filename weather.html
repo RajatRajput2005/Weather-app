@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJ Weather web</title>
+</head>
+ <link rel="stylesheet" href="w.css">
+<body>
+  <div class="wrapper">
+      <h1>Weather App</h1>
+       <div class="tab-container">
+       <p class="tab" data-userWeather> Your Weather</p>
+       <p class="tab"data-searchWeather> Search Weather</p>
+    </div> 
+   <div class="weather-container">
+     <!-- grantlocattion -->
+    <div class=" sub-container grant-location-container">
+        <img src="4064418.png" width="80" height="80" loading="lazy" alt="sda">
+         <p> Grant location access </p>
+         <p>Allow access to get weather Information</p>
+          <button class="btn" data-grantAccess> Grant Access</button>
+    </div>
+     <!-- SEArch form  -->
+    <form class="form-container" data-searchForm>
+        <input placeholder="Search for the city.." data-searchInput>
+         <button class="btn"  type="submit">
+             <img src="search.png" width="30" height="30" loading="lazy" alt=""> 
+            </button>
+    </form>
+    
+     <div class=" sub-container loading-container">
+        <img src="200w.webp" width="150" height="150"  alt="">
+         <!-- <p>LOading</p> -->
+     </div>
+      <!-- show weather info  -->
+      <div class="sub-container user-info-container">
+         <!-- city name and flag  -->
+    <div class="name">
+        <p data-cityName></p>
+        <img data-countryIcon >
+    </div>
+    <!-- weather description -->
+     <p data-weatherDesc></p>
+      <!-- weathericon -->
+     <img data-weatherIcon >
+     <!-- temperature -->
+     <p data-temp></p>
+      <!-- 3 card -parameter -->
+      <div class=" parameter-container">
+        <!-- card 1 -->
+        <div class="paramater">
+          <img src="wind.webp" >
+          <p>Windspeed</p>
+          <p data-windspeed></p>
+        </div>
+        <!-- card 2 -->
+        
+        <div class="paramater">
+            <img src="humidity.webp" >
+            <p>humidity</p>
+            <p data-humidity></p>
+          </div>
+          <!-- card 3 -->
+          
+        <div class="paramater">
+            <img src="cloud.gif" >
+            <p>clouds</p>
+            <p data-cloudiness></p>
+          </div>
+      </div>
+      </div>
+       
+   </div>
+       
+
+  </div>
+  <script src="w.js"></script>
+</body>
+</html>
